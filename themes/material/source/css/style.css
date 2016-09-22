@@ -1,0 +1,85 @@
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+  font-size: 1.5rem !important;
+}
+
+#home-cover {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/home-cover-mobile.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  #home-cover {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/home-cover.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+.small-section {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.red-resume {
+  background-color: #E75353;
+}
+
+.red-resume:hover {
+  background-color: rgb(255, 89, 89);
+}
+
+.rounded {
+  border-radius: 99999px !important;
+}
+
+.btn-medium {
+  height: 42px;
+  line-height: 42px;
+}
+
+.btn.bar, .btn-large.bar {
+  margin: 1rem;
+}
+
+.center-wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#hamburger-menu {
+  font-size: 2rem !important;
+}
+
+.pomodoro-red-bg {
+  background-image: linear-gradient(45deg, #9E1114 0%, #BE272B 35%, #FC5057 100%);
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.marvel-device .screen img {
+  width: 100%;
+  height: 100%;
+}
+
+

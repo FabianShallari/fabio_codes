@@ -1,0 +1,16 @@
+extends includes/base
+
+block body
+    +nav-pages
+    .container
+        .card
+            .card-content
+                span.card-title.blue-grey-text In Tag #{page.tag} :
+
+        each post in page.posts.data
+            case post.layout
+                when 'post'
+                    //- -console.log(post)
+                    +article-post-index(post)
+        +paginator
+    +footer

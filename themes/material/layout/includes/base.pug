@@ -1,0 +1,31 @@
+doctype html
+include nav.pug
+include fab.pug
+
+html
+    head
+        title= page.title || 'Fabian Shallari'
+
+        meta(charset="utf8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+
+        //- CSS
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" rel="stylesheet")
+        link(href="/css/style.css" rel="stylesheet")
+        //link(href="/css/flex-grid.css" rel="stylesheet")
+        link(href="/css/devices.min.css" rel="stylesheet")
+        link(href="/css/typography.css" rel="stylesheet")
+
+
+        block head
+
+    body
+        block body
+
+        //- Javascript
+        block scripts
+            script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js")
+            script(src="/js/init.js")
+

@@ -1,0 +1,90 @@
+.font-light {
+  font-family: "Roboto-Light", sans-serif;
+}
+
+.font-medium {
+  font-family: "Roboto-Medium", sans-serif;
+}
+
+.level-1, .level-2, .level-3 {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  text-shadow: 0 0 0;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+.level-1 {
+  font-size: 1.6rem;
+}
+
+.level-2 {
+  font-size: 1.3rem;
+}
+
+.level-3 {
+  font-size: 1rem;
+}
+
+/* Marvel prototype fix mobile */
+.marvel-device.nexus5 {
+  width: 240px;
+  height: 429px;
+}
+
+@media (min-width: 375px) {
+  .marvel-device.nexus5 {
+    width: 245px;
+    height: 435px;
+  }
+}
+
+@media (min-width: 425px) {
+  .marvel-device.nexus5 {
+    width: 320px;
+    height: 568px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .level-1 {
+    font-size: 2rem;
+  }
+
+  .level-2 {
+    font-size: 1.5rem;
+  }
+
+  .level-3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .level-1 {
+    font-size: 2.2rem;
+  }
+
+  .level-2 {
+    font-size: 1.8rem;
+  }
+
+  .level-3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .level-1 {
+    font-size: 2.6rem;
+  }
+
+  .level-2 {
+    font-size: 2rem;
+  }
+
+  .level-3 {
+    font-size: 1.6rem;
+  }
+}

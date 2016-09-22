@@ -1,0 +1,13 @@
+{
+  "name": "hexo-theme-material",
+  "version": "1.0.0",
+  "description": "A theme of hexo.",
+  "main": "index.js",
+  "scripts": {
+    "copy": "mkdir ../../scripts&&cp ./scripts/*.js ../../scripts"
+  },
+  "author": "heymind",
+  "dependencies": {
+    "pug": "^2.0.0-beta6"
+  }
+}
