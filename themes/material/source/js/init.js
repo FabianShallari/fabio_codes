@@ -5,6 +5,7 @@
   $(function(){
 
     $('.button-collapse').sideNav();
+    smoothScroll.init();
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space

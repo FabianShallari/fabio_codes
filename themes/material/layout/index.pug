@@ -2,6 +2,7 @@ extends includes/base.pug
 
 block body
     +fab
+    //Intro
     #home-cover.section.full-height
         +navbar
         .container.white-text.center-wrapper
@@ -28,52 +29,65 @@ block body
                         .small-section
                             a(href="#").waves-effect.waves-light.btn.btn-medium.rounded.red-resume Download Resume
                                 i.small.material-icons.left cloud_download
-    .section.pomodoro-red-bg.full-height
-        br
-        .container.white-text.table
-            .middle-table
+    //Projects
+    each project in site.data.index.projects
+        div(class="section full-height " + project.bg, id='project-' + project.title)
+            .container.white-text.table.center-wrapper
+                .middle-table.center
+                    .row
+                        .col.s12.l6.center-wrapper
+                            .center
+                                .level-1 #{project.title}
+                                .font-medium.level-3 #{project.subtitle}
+                                .hide-on-small-and-down
+                                    br
+                                .hide-on-small-and-down
+                                    br
+                                br
+                                .level-3 #{project.body}
+                                br
+                                .hide-on-med-and-down.small-section
+                                .section
+                                    if project.buttons.playStoreLink
+                                        a(href=project.buttons.playStoreLink, target='_blank').waves-effect.waves-green.btn.btn-medium.rounded.white.green-text.text-lighten-1
+                                            | View on Play Store
+                                            i.small.material-icons.left play_arrow
+                        .col.s12.l6.center-wrapper
+                            br
+                            .center
+                                br
+                                br    
+                                //.hide-on-med-and-down.vcenter.arrow-left
+                                    i.medium.material-icons chevron_left
+                                .marvel-device.nexus5.device.col.offset-m0.offset-l4(style='box-sizing: border-box !important;')
+                                    .top-bar
+                                    .sleep
+                                    .volume
+                                    .camera
+                                    .screen
+                                        img(src="/images/home-cover.jpg") 
+                                    //Change to #{project.screenshots}    
+                                //.hide-on-med-and-down.device-arrow.arrow-right
+                                    i.medium.material-icons chevron_right        
+                                .col.s12
+                                    .section        
+                        .col.s12
+                            a(href='#project-' + project.next, data-scroll).waves-effect.waves-light.btn-flat.btn-medium.white-text.rounded Next Project
+                                i.small.material-icons.left keyboard_arrow_down
+    //Contact
+    .section.contact-bg.full-height(id='project-Contact')
+        .container.white-text.table.center-wrapper
+            .middle-table.center
                 .row
-                    .col.s12.l6
-                        .level-1 Pomodoro
-                        .font-medium.level-3 Android Development
-                        .hide-on-small-and-down
+                    .col.s12.l6.center-wrapper.contact-wrapper
+                        .center.font-light
+                            .android-icon
+                                i.material-icons android
+                            .level-1.font-light Do you like what you see ?
                             br
-                        .hide-on-small-and-down
+                            .level-1.font-light Lets make an app together.
                             br
-                        br
-                        .level-3
-                            | Pomodoro Pizza & More is a new Albanian startup that specializes
-                            | in food delivery. I built their Android app from scratch and integrated with
-                            | the backend services. Adapted the iOS design of the iOS app to a
-                            | Material Design Language, in order to make the app familiar with the
-                            | platform users, enhancing UX and familiarity.
-                        br
-                        .hide-on-med-and-down.small-section
-                        .section
-                            a(href="#").waves-effect.waves-green.btn.btn-medium.rounded.white.green-text.text-lighten-1
-                                | View on Play Store
-                                i.small.material-icons.left play_arrow
-                    .col.hide-on-large-only
-                        .section
-                    .col.m1.hide-on-med-and-down.vcenter
-                        i.large.material-icons chevron_left
-                    .col.s12.m6.l6.center
-                        .marvel-device.nexus5
-                            .top-bar
-                            .sleep
-                            .volume
-                            .camera
-                            .screen
-                                img(src="/images/home-cover.jpg")
-                    //.col.m1.hide-on-med-and-down
-                    //    i.medium.material-icons chevron_right
-                    .col.s12
-                        .section
-                    .col.s12
-                        a(href="#").waves-effect.waves-light.btn-flat.btn-medium.white-text.rounded Next Project
-                            i.small.material-icons.left keyboard_arrow_down
-
-
-
-
-
+                            br
+                            .level-1.font-light Send me a note to.
+                            br
+                            a.mail-link.level-1(href="mailto: " + site.data.index.info.email) #{site.data.index.info.email}
