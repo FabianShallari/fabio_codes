@@ -6,6 +6,9 @@
 
     $('.button-collapse').sideNav();
     smoothScroll.init();
+    $('[data-close-sidenav]').click(function () {
+      $('.button-collapse').sideNav('hide');
+    });
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space

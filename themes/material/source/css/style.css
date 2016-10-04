@@ -54,11 +54,11 @@ html, body {
   margin: 1rem;
 }
 
-.container .center-wrapper {
+.container .vcenter-wrapper {
   padding: 20px;
 }
 
-.center-wrapper {
+.vcenter-wrapper {
   height: 90vh;
   position: relative;
   top: 0;
@@ -66,24 +66,53 @@ html, body {
   display: table;
 }
 
-@media all and (orientation:portrait) {
-  .center-wrapper {
+.full-width {
+  width: 100%;
+}
+
+@media all and (orientation: portrait) {
+  .vcenter-wrapper {
     height: auto !important;
   }
+
   .full-height {
     min-height: auto !important;
-}
+  }
 }
 
-
-.center {
+.vcenter {
   text-align: left;
   display: table-cell;
   vertical-align: middle;
 }
 
+@media all and (max-width: 992px) {
+  .vcenter.center-on-med-and-down {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .level-3.justify {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.justify {
+  text-align: justify;
+}
+
 #hamburger-menu {
   font-size: 2rem !important;
+}
+
+.carousel.carousel-slider {
+  height: 100% !important;
+}
+
+.indicators {
+  margin-top: 62px !important;
 }
 
 .pomodoro-red-bg {
@@ -91,20 +120,19 @@ html, body {
 }
 
 .ecovolis-bg {
-  background-image: linear-gradient(135deg, #5fccd3 0%, #3e98a1 100%); 
+  background-image: linear-gradient(135deg, #5fccd3 0%, #3e98a1 100%);
 }
 
 .wetick-bg {
-  background-image: linear-gradient(135deg, #2f8788 0%, #143637 100%); 
+  background-image: linear-gradient(135deg, #2f8788 0%, #143637 100%);
 }
 
 .charlie-bg {
-  background-image: linear-gradient(135deg, #7ac043 0%, #42a72d 100%); 
+  background-image: linear-gradient(135deg, #7ac043 0%, #42a72d 100%);
 }
 
-
 .contact-bg {
-  background-image: linear-gradient(135deg, #3095a7 0%, #4ca77c 50%, #7ac046 100%); 
+  background-image: linear-gradient(135deg, #3095a7 0%, #4ca77c 50%, #7ac046 100%);
 }
 
 .full-height {
@@ -114,6 +142,11 @@ html, body {
 .marvel-device .screen img {
   width: 100%;
   height: 100%;
+}
+
+.marvel-device {
+  display: block;
+  margin: auto;
 }
 
 .device-arrow i {
@@ -126,7 +159,7 @@ html, body {
 
 .android-icon i {
   font-size: 120px;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 }
 
 .mail-link {

@@ -23,6 +23,10 @@ h1{
   display: none;
 }
 
+.carousel.carousel-slider {
+  height: 100% !important;
+}
+
 .level-1, .level-2, .level-3{
   font-family: 'NewBaskervilleStd-Roman', Times, serif;
   -webkit-font-smoothing: antialiased;

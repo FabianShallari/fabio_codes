@@ -5,8 +5,8 @@ projects:
     bg: pomodoro-red-bg
     body: Pomodoro Pizza & More is a new Albanian startup that specializes in food delivery. I built their Android app from scratch and integrated with the backend services. Adapted the iOS design of the iOS app to a Material Design Language, in order to make the app familiar with the platform users, enhancing UX and familiarity.
     buttons:
-      playStoreLink: "#"
-    screenshots:
+      playStoreLink: "https://play.google.com/store/apps/details?id=al.pomodoro.android"
+    images:
       - pomodoro1.png
       - pomodoro2.png  
       - pomodoro3.png
@@ -17,8 +17,8 @@ projects:
     bg: ecovolis-bg
     body: I helped the environment friendly local non-profit organisation Ecovolis launch their Android app in the Play Store. Users can find Bike Repair Shops near them. They can also find roads which have bike lanes and take a Picture and report occupied bike lanes. Integrated with a backend service for managing lane reports and other app data on entities.
     buttons:
-      playStoreLink: "#"
-    screenshots:
+      playStoreLink: "https://play.google.com/store/apps/details?id=com.ecovolis.android"
+    images:
       - ecovolis1.png
       - ecovolis2.png  
       - ecovolis3.png  
@@ -29,7 +29,11 @@ projects:
     bg: wetick-bg
     body: I helped the environment friendly local non-profit organisation Ecovolis launch their Android app in the Play Store. Users can find Bike Repair Shops near them. They can also find roads which have bike lanes and take a Picture and report occupied bike lanes. Integrated with a backend service for managing lane reports and other app data on entities.
     buttons:
-      playStoreLink: "#"
+      playStoreLink: "https://play.google.com/store/apps/details?id=com.wetick.android"
+    images:
+      - wetick1.png
+      - wetick2.png
+      - wetick3.png
     next: "Charlie"  
   -
     title: Charlie
@@ -37,7 +41,9 @@ projects:
     bg: charlie-bg
     body: I helped the environment friendly local non-profit organisation Ecovolis launch their Android app in the Play Store. Users can find Bike Repair Shops near them. They can also find roads which have bike lanes and take a Picture and report occupied bike lanes. Integrated with a backend service for managing lane reports and other app data on entities.
     buttons:
-      playStoreLink: "#"
-    next: "Contact"  
-info:
-  email: h1@fabio.codes
+      playStoreLink: "https://play.google.com/store/apps/details?id=guru.charlie.android"
+    images:
+      - charlie1.png
+      - charlie2.png
+      - charlie3.png
+    next: "Contact"
