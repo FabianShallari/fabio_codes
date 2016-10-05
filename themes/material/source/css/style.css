@@ -26,6 +26,7 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
 
 html, body {
   height: 200px;
+  box-sizing: border-box;
 }
 
 .small-section {
@@ -99,8 +100,38 @@ html, body {
   }
 }
 
+@media all and (max-width: 1317px){
+  .hide-if-not-enough-room {
+    display: none;
+  }
+
+  .full-width-if-enough-room {
+    width: 100% !important;
+  }
+}
+
+
+
+.showcase-container {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1280px;
+}
+
+.no-pad {
+  padding: 0 !important;
+}
+
+.no-pad-left {
+  padding-left: 0 !important;
+}
+
 .justify {
   text-align: justify;
+}
+
+.center-align {
+  text-align: center !important;
 }
 
 #hamburger-menu {

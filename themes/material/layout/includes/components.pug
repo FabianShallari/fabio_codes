@@ -33,7 +33,7 @@ mixin cover
     #home-cover.section.full-height
         +navbar
         .container.white-text
-            .vcenter-wrapper.full-width
+            .vcenter-wrapper.full-width.no-pad-left
                 .vcenter
                     br
                     .row
@@ -52,7 +52,7 @@ mixin cover
                         .col
                             .small-section
                                 a(href="#"
-                                + site.data.index.projects[0].title, data-scroll).waves-effect.waves-red.white.black-text.btn.btn-medium.rounded Browse Work
+                                + site.data.index.projects[0].title, data-scroll).waves-effect.white.black-text.btn.btn-medium.rounded Browse Work
                                     i.small.material-icons.left flash_on
                         .col
                             .small-section
@@ -65,7 +65,7 @@ mixin contact
             .vcenter
                 .row
                     .col.s12.l6.vcenter-wrapper.contact-wrapper
-                        .vcenter.font-light
+                        .vcenter.font-light.center-on-med-and-down
                             .android-icon
                                 i.material-icons android
                             .level-1.font-light Do you like what you see ?
@@ -77,10 +77,16 @@ mixin contact
                             br
                             a.mail-link.level-1(href="mailto:"
                             + site.data.global.info.email) #{site.data.global.info.email}
+                            br
+                            br
+                            .section
+                                a(href="#"
+                                + site.data.index.projects[0].title, data-scroll).waves-effect.white.black-text.btn.btn-medium.rounded Browse Work
+                                    i.small.material-icons.left flash_on
 
 mixin project_showcase(project)
     div(class="section full-height " + project.bg, id=project.title)
-        .container.white-text.table.vcenter-wrapper
+        .showcase-container.white-text.table.vcenter-wrapper
             .vcenter.center-on-med-and-down
                 .row
                     .col.s12.l6.vcenter-wrapper
@@ -102,21 +108,31 @@ mixin project_showcase(project)
                                         | View on Play Store
                                         i.small.material-icons.left play_arrow
                     .col.s12.l6.vcenter-wrapper
-                        br
                         .vcenter
-                            .marvel-device.nexus5.device
-                                .top-bar
-                                .sleep
-                                .volume
-                                .camera
-                                .screen
-                                    .carousel.carousel-slider
-                                        each image in project.images
-                                            a.carousel-item: img(src="/images/screenshots/" + image)
+                            br
+                            .row
+                                .col.s2.vcenter-wrapper.no-pad.hide-if-not-enough-room.showcase-previous
+                                    .vcenter.center-align
+                                        i.large.material-icons chevron_left
+                                .col.s8.vcenter-wrapper.no-pad.full-width-if-enough-room
+                                    .vcenter
+                                        .marvel-device.nexus5.device.vcenter
+                                            .top-bar
+                                            .sleep
+                                            .volume
+                                            .camera
+                                            .screen
+                                                .carousel.carousel-slider
+                                                    each image in project.images
+                                                        a.carousel-item: img(src="/images/screenshots/"
+                                                        + image)
+                                .col.s2.vcenter-wrapper.no-pad.hide-if-not-enough-room.showcase-next
+                                    .vcenter.center-align
+                                        i.large.material-icons chevron_right
                     .col.s12
                         .section
                     .col.s12.center-on-med-and-down
                         a(href="#"
-                        + project.next, data-scroll).waves-effect.waves-light.btn-flat.btn-medium.white-text.rounded Next Project
+                        + project.next, data-scroll, style="margin-top: -2rem").waves-effect.waves-light.btn-flat.btn-medium.white-text.rounded Next Project
                             i.small.material-icons.left keyboard_arrow_down
 

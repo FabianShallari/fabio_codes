@@ -4,7 +4,15 @@
 $(document).ready(function () {
   $('.carousel.carousel-slider').carousel({full_width: true});
 
-  setInterval(function () {
+  $('.showcase-next').click(function () {
     $('.carousel.carousel-slider').carousel('next');
-  }, 2500);
+  });
+
+  $('.showcase-previous').click(function () {
+    $('.carousel.carousel-slider').carousel('previous');
+  });
+
+  // setInterval(function () {
+  //   $('.carousel.carousel-slider').carousel('next');
+  // }, 2500);
 });
