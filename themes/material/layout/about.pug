@@ -1,16 +1,12 @@
-extends includes/base
+extends includes/site.pug
 
-block body
-    +nav-pages
-    .container
-        .card
-            .card-content
-                span.card-title.blue-grey-text In Tag #{page.tag} :
+append vars
+    - var current_page = 'about'
 
-        each post in page.posts.data
-            case post.layout
-                when 'post'
-                    //- -console.log(post)
-                    +article-post-index(post)
-        +paginator
-    +footer
+block header
+    .font-light.level-1
+        | Hello! I am Fabian, these are my interests and some of my
+        | favorite things to read
+
+block content
+    +card-panel(page.content)

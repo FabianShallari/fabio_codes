@@ -1,0 +1,24 @@
+extends base.pug
+
+append head
+    link(href="/css/blog.css" rel="stylesheet")
+
+block body
+
+    block vars
+        - var browse_work_link = theme.menu.Home
+        - var current_page = ''
+
+    +fab
+    //Intro
+    #header-cover.section
+        +navbar(current_page)
+        .header-container.white-text.center-align
+            block header
+
+    .showcase-container
+        .row.shift-up
+            .col.s12
+                block content
+    // Contact
+    +contact(browse_work_link)

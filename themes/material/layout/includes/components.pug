@@ -4,34 +4,50 @@ mixin fab
         + site.data.global.info.email).btn-floating.btn-large.waves-effect.waves-light.red
             i.material-icons email
 
-mixin navbar
+mixin navbar(current_page)
     nav(role="navigation").transparent.z-depth-0
         .nav-wrapper.container
             a(href="#").brand-logo#logo-container Fabian Shallari
             a(href="#", data-activates="nav-slide").button-collapse
                 i#hamburger-menu.material-icons menu
-            ul.right.hide-on-med-and-down
-                li: a(href="#").waves-effect.waves-light.uppercase Work
-                    i.material-icons.md-18.left.md-light code
-                li: a(href="#").waves-effect.waves-light.uppercase Blog
-                    i.material-icons.left.md-light mode_edit
-                li: a(href="#").waves-effect.waves-light.uppercase About
-                    i.material-icons.left.md-light person
-                li: a(href="#Contact", data-scroll).waves-effect.waves-light.uppercase Contact
-                    i.material-icons.left.md-light email
+            ul.top-nav.right.hide-on-med-and-down
+                li(class= current_page === 'work' ? "active" : "")
+                    a(href= theme.menu.Home).waves-effect.waves-light.uppercase Work
+                        i.material-icons.md-18.left.md-light code
+                li(class= current_page === 'blog' ? "active" : "")
+                    a(href= theme.menu.Archive).waves-effect.waves-light.uppercase Blog
+                        i.material-icons.left.md-light mode_edit
+                li(class= current_page === 'about' ? "active" : "")
+                    a(href= theme.menu.About).waves-effect.waves-light.uppercase About
+                        i.material-icons.left.md-light person
+                li
+                    a(href="#Contact", data-scroll).waves-effect.waves-light.uppercase Contact
+                        i.material-icons.left.md-light email
             ul#nav-slide.side-nav
-                li: a(href="#").waves-effect.waves-teal.uppercase Work
-                    i.material-icons.left.md-light code
-                li: a(href="#").waves-effect.waves-teal.uppercase Blog
-                    i.material-icons.left.md-light mode_edit
-                li: a(href="#").waves-effect.waves-teal.uppercase About
-                    i.material-icons.left.md-light person
-                li: a(href="#Contact", data-scroll, data-close-sidenav).waves-effect.waves-teal.uppercase Contact
-                    i.material-icons.left.md-light email
+                li(class= current_page === 'work' ? "active" : "")
+                    a(href= theme.menu.Home).waves-effect.waves-light.uppercase Work
+                        i.material-icons.md-18.left.md-light code
+                li(class= current_page === 'blog' ? "active" : "")
+                    a(href= theme.menu.Archive).waves-effect.waves-light.uppercase Blog
+                        i.material-icons.left.md-light mode_edit
+                li(class= current_page === 'about' ? "active" : "")
+                    a(href= theme.menu.About).waves-effect.waves-light.uppercase About
+                        i.material-icons.left.md-light person
+                li
+                    a(href="#Contact", data-scroll, data-close-sidenav).waves-effect.waves-light.uppercase Contact
+                        i.material-icons.left.md-light email
+
+mixin card-panel(content)
+    .card-panel.black-text
+        != content
+
+mixin browse_work_btn(link)
+    a(href=link, data-scroll).waves-effect.white.black-text.btn.btn-medium.rounded Browse Work
+        i.small.material-icons.left flash_on
 
 mixin cover
     #home-cover.section.full-height
-        +navbar
+        +navbar('work')
         .container.white-text
             .vcenter-wrapper.full-width.no-pad-left
                 .vcenter
@@ -51,15 +67,13 @@ mixin cover
                     .row
                         .col
                             .small-section
-                                a(href="#"
-                                + site.data.index.projects[0].title, data-scroll).waves-effect.white.black-text.btn.btn-medium.rounded Browse Work
-                                    i.small.material-icons.left flash_on
+                                +browse_work_btn("#" + site.data.index.projects[0].title)
                         .col
                             .small-section
-                                a(href="#").waves-effect.waves-light.btn.btn-medium.rounded.red-resume Download Resume
+                                a(href="/documents/FabianShallari-Resume.pdf", download).waves-effect.waves-light.btn.btn-medium.rounded.red-resume Download Resume
                                     i.small.material-icons.left cloud_download
 
-mixin contact
+mixin contact(browse_work_link)
     .section.contact-bg.full-height(id='Contact')
         .container.white-text.table.vcenter-wrapper
             .vcenter
@@ -67,7 +81,7 @@ mixin contact
                     .col.s12.l6.vcenter-wrapper.contact-wrapper
                         .vcenter.font-light.center-on-med-and-down
                             .android-icon
-                                i.material-icons android
+                                img(src="/images/fabian.png")
                             .level-1.font-light Do you like what you see ?
                             br
                             .level-1.font-light Lets make an app together.
@@ -80,9 +94,7 @@ mixin contact
                             br
                             br
                             .section
-                                a(href="#"
-                                + site.data.index.projects[0].title, data-scroll).waves-effect.white.black-text.btn.btn-medium.rounded Browse Work
-                                    i.small.material-icons.left flash_on
+                                +browse_work_btn(browse_work_link)
 
 mixin project_showcase(project)
     div(class="section full-height " + project.bg, id=project.title)
@@ -133,6 +145,6 @@ mixin project_showcase(project)
                         .section
                     .col.s12.center-on-med-and-down
                         a(href="#"
-                        + project.next, data-scroll, style="margin-top: -2rem").waves-effect.waves-light.btn-flat.btn-medium.white-text.rounded Next Project
+                        + project.next, data-scroll).next.waves-effect.waves-light.btn-flat.btn-medium.white-text.rounded Next Project
                             i.small.material-icons.left keyboard_arrow_down
 

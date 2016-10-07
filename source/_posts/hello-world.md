@@ -1,5 +1,18 @@
 ---
 title: Hello World
+layout: post
+excerpt: 
+  Hello Internet, This is my first blog post :) yaayyyyyyyy
+  Lorem dolor sit amet, vari karin karin karin fare fare fare
+  o lale ca bo kshu ti me dakuuuuuu mos tall karin etj etj etj 
+  etj ejt ejtjtejtjetjejtejtejtejtejtejtejtejtejtejtejtejtjetjtejetejtejtejt
+  ethethethehtethetjejtejtejt.,, ca ben ti aty orreee
+  orre babale
+  orre babuc o kar iv ogellllll
+  ri karin karin karin fare fare fare
+  o lale ca bo kshu ti me dakuuuuuu mos tall karin etj etj etj 
+  etj ejt ejtjtejtjetjejtejtejtejtejtejtejtejtejtejtejtejtjetjtejetejtejtejt
+  ethethethehtethetjejtejtejt.
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 

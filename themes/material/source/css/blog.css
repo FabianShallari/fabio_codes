@@ -1,0 +1,67 @@
+.card-content .level-1 {
+  line-height: 2;
+  font-weight: bold;
+  color: #303030;
+}
+
+.card-content .level-3 {
+  color: #5A5A5A;
+}
+
+.card-content .date{
+  color: #BABABA;
+}
+
+.card-action a {
+  font-weight: bold;
+}
+
+.card {
+  cursor: pointer !important;
+}
+
+a .link-wrapper {
+  display: block;
+}
+
+.card-content {
+  padding: 40px 40px 20px 40px !important;
+}
+
+.card-panel {
+  padding: 40px 40px 40px 40px !important;
+}
+
+@media all and (max-width: 600px) {
+  .card-content {
+    padding: 20px 20px 10px 20px !important;;
+  }
+
+  .card-panel {
+    padding: 20px 20px 20px 20px !important;;
+  }
+}
+
+.card{
+  height: auto !important;
+}
+
+.card-action, .card-content {
+  position: relative !important;
+}
+
+.header-container {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.showcase-container {
+  max-width: 1024px !important;
+}
+
+.card .card-action {
+  border-top: none !important;
+}

@@ -27,6 +27,7 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
 html, body {
   height: 200px;
   box-sizing: border-box;
+  min-width: 320px !important;
 }
 
 .small-section {
@@ -67,6 +68,10 @@ html, body {
   display: table;
 }
 
+.shift-up {
+  margin-top: -5%;
+}
+
 .full-width {
   width: 100%;
 }
@@ -78,6 +83,12 @@ html, body {
 
   .full-height {
     min-height: auto !important;
+  }
+}
+
+@media all and (orientation: landscape) {
+  .next {
+    margin-top: -7rem;
   }
 }
 
@@ -100,7 +111,7 @@ html, body {
   }
 }
 
-@media all and (max-width: 1317px){
+@media all and (max-width: 1317px) {
   .hide-if-not-enough-room {
     display: none;
   }
@@ -109,8 +120,6 @@ html, body {
     width: 100% !important;
   }
 }
-
-
 
 .showcase-container {
   margin: 0 auto;
@@ -162,7 +171,7 @@ html, body {
   background-image: linear-gradient(135deg, #7ac043 0%, #42a72d 100%);
 }
 
-.contact-bg {
+.contact-bg, #header-cover {
   background-image: linear-gradient(135deg, #3095a7 0%, #4ca77c 50%, #7ac046 100%);
 }
 
@@ -188,8 +197,9 @@ html, body {
   line-height: 1 !important;
 }
 
-.android-icon i {
-  font-size: 120px;
+.android-icon img{
+  height: 250px;
+  width: 250px;
   margin-bottom: 30px;
 }
 

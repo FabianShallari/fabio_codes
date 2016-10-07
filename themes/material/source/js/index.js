@@ -9,7 +9,7 @@ $(document).ready(function () {
   });
 
   $('.showcase-previous').click(function () {
-    $('.carousel.carousel-slider').carousel('previous');
+    $('.carousel.carousel-slider').carousel('prev');
   });
 
   // setInterval(function () {

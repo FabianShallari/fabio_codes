@@ -1,0 +1,11 @@
+extends includes/site.pug
+
+append head
+    link(href="/css/post.css" rel="stylesheet")
+
+block header
+    a(href= theme.menu.Archive).waves-effect.white.black-text.btn.btn-medium.rounded.uppercase Back to blog list
+        i.small.material-icons.left arrow_back
+
+block content
+    +card-panel(page.content)

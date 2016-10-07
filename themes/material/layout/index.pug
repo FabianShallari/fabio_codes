@@ -1,9 +1,15 @@
 extends includes/base.pug
 
+block head
+    link(href="/css/index.css" rel="stylesheet")
+
 block title
     title= 'Fabian Shallari'
 
 block body
+
+    - var browse_work_link = "#" + site.data.index.projects[0].title
+
     +fab
     //Intro
     +cover
@@ -11,7 +17,7 @@ block body
     each project in site.data.index.projects
         +project_showcase(project)
     // Contact
-    +contact
+    +contact(browse_work_link)
 
 append scripts
     script(src="/js/index.js")

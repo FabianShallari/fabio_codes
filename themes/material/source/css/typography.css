@@ -2,6 +2,22 @@
   font-family: "Roboto-Light", sans-serif;
 }
 
+.body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+  height: 56px !important;
+  line-height: 56px !important;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  height: 56px !important;
+  line-height: 56px !important;
+}
+
 .font-medium {
   font-family: "Roboto-Medium", sans-serif;
 }
@@ -25,6 +41,16 @@
 .level-3 {
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+.level-3.truncate-4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  line-height: 1.6;        /* fallback */
+  max-height: 7.04rem;       /* fallback */
 }
 
 /* Marvel prototype fix mobile */
@@ -60,6 +86,16 @@
   .level-3 {
     font-size: 1rem;
   }
+
+  .level-3.truncate-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-height: 1.6;        /* fallback */
+    max-height: 6.4rem;       /* fallback */
+  }
 }
 
 @media (min-width: 1024px) {
@@ -74,6 +110,16 @@
   .level-3 {
     font-size: 1.2rem;
   }
+
+  .level-3.truncate-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-height: 1.6;        /* fallback */
+    max-height: 7.68rem;       /* fallback */
+  }
 }
 
 @media (min-width: 1440px) {
@@ -86,6 +132,16 @@
   }
 
   .level-3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+  }
+
+  .level-3.truncate-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-height: 1.6;        /* fallback */
+    max-height: 8.32rem;       /* fallback */
   }
 }

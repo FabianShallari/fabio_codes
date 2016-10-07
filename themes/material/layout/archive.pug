@@ -1,0 +1,31 @@
+extends includes/site.pug
+
+block title
+    title= 'Fabian Shallari - Blog'
+
+append vars
+    - var current_page = 'blog'
+
+block header
+    .font-light.level-1
+        | Hello! I am Fabian, this is where I keep a collection of my thoughts
+
+block content
+    // posts
+    each post in page.posts.data
+        .row
+            .col.s12.center-on-med-and-down
+                a.link-wrapper(href= url_for(post.path))
+                    .card.small.hoverable
+                        .card-content
+                            .level-3.date
+                                = post.date.format('D MMMM YYYY')
+                            span.level-1
+                                = post.title
+                            .level-3.truncate-4
+                                = post.excerpt
+                        .card-action
+                            a(href= url_for(post.path)).uppercase.right.red-text
+                                | Read More
+
+    // pagination
