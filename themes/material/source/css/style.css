@@ -112,7 +112,7 @@ html, body {
   }
 }
 
-@media all and (max-width: 1317px) {
+@media all and (max-width: 1407px) {
   .hide-if-not-enough-room {
     display: none;
   }
@@ -125,7 +125,7 @@ html, body {
 .showcase-container {
   margin: 0 auto;
   width: 85%;
-  max-width: 1280px;
+  max-width: 1440px;
 }
 
 .no-pad {
