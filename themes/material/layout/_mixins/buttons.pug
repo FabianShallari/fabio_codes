@@ -1,0 +1,9 @@
+mixin fab
+    .fixed-action-btn
+        a(href="mailto:"
+        + site.data.global.info.email).btn-floating.btn-large.waves-effect.waves-light.red
+            i.material-icons email
+
+mixin browse_work_btn(link)
+    a(href=link, data-scroll).waves-effect.white.black-text.btn.btn-medium.rounded Browse Work
+        i.icon-flash.left

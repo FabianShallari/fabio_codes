@@ -1,4 +1,15 @@
-projects: 
+projects:
+  -
+    title: Charlie
+    subtitle: Android Development
+    bg: charlie-bg
+    body: Charlie is a musical companion app. It lets you recognize songs and makes musical suggestions in a UX-friendly chat interface. I paired with my old friend and awesome designer Taulant for this project and helped with the design by providing feedback during the design sprints based on personal experience with Material Design and Android UI and UX implementation. I developed the Android app from scratch and integrated with Discogs and Gracenote and YouTube APIs.
+    buttons:
+      playStoreLink: "https://play.google.com/store/apps/details?id=guru.charlie.android"
+    images:
+      - charlie1.png
+      - charlie2.png
+      - charlie3.png
   -
     title: Pomodoro
     subtitle: Android Development
@@ -10,40 +21,25 @@ projects:
       - pomodoro1.png
       - pomodoro2.png  
       - pomodoro3.png
-    next: "Ecovolis"
-  -
-    title: Ecovolis
-    subtitle: Android Development
-    bg: ecovolis-bg
-    body: I helped the environment friendly local non-profit organisation Ecovolis launch their Android app in the Play Store. Users can find Bike Repair Shops near them. They can also find roads which have bike lanes and take a Picture and report occupied bike lanes. Integrated with a backend service for managing lane reports and other app data on entities.
-    buttons:
-      playStoreLink: "https://play.google.com/store/apps/details?id=com.ecovolis.android"
-    images:
-      - ecovolis1.png
-      - ecovolis2.png  
-      - ecovolis3.png  
-    next: "Wetick"
   -
     title: Wetick
     subtitle: Android Development
     bg: wetick-bg
-    body: I helped the environment friendly local non-profit organisation Ecovolis launch their Android app in the Play Store. Users can find Bike Repair Shops near them. They can also find roads which have bike lanes and take a Picture and report occupied bike lanes. Integrated with a backend service for managing lane reports and other app data on entities.
+    body: Wetick is a social network that lets user upload two options, set up a timer and leave it up to their tickers to choose. It also lets them challenge other users with an option and let the tickers decide the winner. I developed their MVP Android app and integrated it with the backend.
     buttons:
       playStoreLink: "https://play.google.com/store/apps/details?id=com.wetick.android"
     images:
       - wetick1.png
       - wetick2.png
       - wetick3.png
-    next: "Charlie"  
   -
-    title: Charlie
+    title: Ecovolis
     subtitle: Android Development
-    bg: charlie-bg
-    body: I helped the environment friendly local non-profit organisation Ecovolis launch their Android app in the Play Store. Users can find Bike Repair Shops near them. They can also find roads which have bike lanes and take a Picture and report occupied bike lanes. Integrated with a backend service for managing lane reports and other app data on entities.
+    bg: ecovolis-bg
+    body: I helped the environment-friendly, local non-profit organization Ecovolis launch their Android app in the Play Store. Users can find the nearest Bike Repair Shop, roads which have bike lanes and take pictures to report occupied bike lanes.
     buttons:
-      playStoreLink: "https://play.google.com/store/apps/details?id=guru.charlie.android"
+      playStoreLink: "https://play.google.com/store/apps/details?id=com.ecovolis.android"
     images:
-      - charlie1.png
-      - charlie2.png
-      - charlie3.png
-    next: "Contact"
+      - ecovolis1.png
+      - ecovolis2.png
+      - ecovolis3.png

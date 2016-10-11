@@ -1,0 +1,32 @@
+mixin navbar(current_page)
+    nav(role="navigation").transparent.z-depth-0
+        .nav-wrapper.container
+            a(href= theme.menu.Home).brand-logo#logo-container Fabian Shallari
+            a(href="#", data-activates="nav-slide").button-collapse
+                i#hamburger-menu.material-icons menu
+            ul.top-nav.right.hide-on-med-and-down
+                li(class= current_page === 'work' ? "active" : "")
+                    a(href= theme.menu.Home).waves-effect.waves-light.uppercase Work
+                        i.material-icons.md-18.left.md-light code
+                //li(class= current_page === 'blog' ? "active" : "")
+                //    a(href= theme.menu.Archive).waves-effect.waves-light.uppercase Blog
+                //        i.material-icons.left.md-light mode_edit
+                li(class= current_page === 'about' ? "active" : "")
+                    a(href= theme.menu.About).waves-effect.waves-light.uppercase About
+                        i.material-icons.left.md-light person
+                li
+                    a(href="#Contact", data-scroll).waves-effect.waves-light.uppercase Contact
+                        i.material-icons.left.md-light email
+            ul#nav-slide.side-nav
+                li(class= current_page === 'work' ? "active" : "")
+                    a(href= theme.menu.Home).waves-effect.waves-light.uppercase Work
+                        i.material-icons.md-18.left.md-light code
+                //li(class= current_page === 'blog' ? "active" : "")
+                //    a(href= theme.menu.Archive).waves-effect.waves-light.uppercase Blog
+                        i.material-icons.left.md-light mode_edit
+                li(class= current_page === 'about' ? "active" : "")
+                    a(href= theme.menu.About).waves-effect.waves-light.uppercase About
+                        i.material-icons.left.md-light person
+                li
+                    a(href="#Contact", data-scroll, data-close-sidenav).waves-effect.waves-light.uppercase Contact
+                        i.material-icons.left.md-light email

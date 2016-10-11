@@ -1,0 +1,16 @@
+mixin post_preview(post)
+    .row
+        .col.s12.center-on-small-only
+            a.link-wrapper(href= url_for(post.path))
+                .card.blog-post.blog-preview.hoverable
+                    .card-content
+                        .blog-date
+                            = post.date.format('MMMM D YYYY')
+                        span.blog-title
+                            = post.title
+                        .blog-body.truncate-4
+                            = post.excerpt
+                    .card-action
+                        a(href= url_for(post.path)).uppercase.right.red-text
+                            | Read More
+

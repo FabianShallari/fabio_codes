@@ -1,6 +1,7 @@
 ---
 title: Hello World
 layout: post
+date: 2015-09-07 18:53:59
 excerpt: 
   Hello Internet, This is my first blog post :) yaayyyyyyyy
   Lorem dolor sit amet, vari karin karin karin fare fare fare

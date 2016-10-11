@@ -1,0 +1,41 @@
+mixin contact(browse_work_link)
+    .section.contact-bg.full-height(id='Contact')
+        .container.white-text.table.vcenter-wrapper
+            .vcenter
+                .row
+                    .col.s12.l6.vcenter-wrapper.contact-wrapper
+                        .vcenter.font-light.center-on-med-and-down
+                            .android-icon
+                                img(src="/images/index/fabian.png")
+                            .level-1.font-light Do you like what you see ?
+                            br
+                            .level-1.font-light Lets make an app together.
+                            br
+                            .level-1.font-light Send me a note to:
+                            br
+                            a.mail-link.level-1(href="mailto:"
+                            + site.data.global.info.email) #{site.data.global.info.email}
+                            br
+                    .col.s12.l6.vcenter-wrapper
+                        .vcenter.center-on-med-and-down.social-wrapper
+                            .level-1.font-light.white-text
+                                | Just saying hi? Feel free to reach to any of the social networks below
+                            br
+                            .level-1
+                                a.social-link(href="https://www.twitter.com/FabianShallari")
+                                    i.icon-twitter.big
+                                    | @FabianShallari
+                            br
+                            .level-1
+                                a.social-link(href="https://www.github.com/FabianShallari")
+                                    i.icon-github.big
+                                    | /FabianShallari
+                            br
+                            .level-1
+                                a.social-link(href="https://al.linkedin.com/in/fabianshallari")
+                                    i.icon-linkedin.big
+                                    | /FabianShallari
+                            br
+                .row
+                    .col.s12.center-on-med-and-down
+                        +browse_work_btn(browse_work_link)

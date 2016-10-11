@@ -1,0 +1,27 @@
+mixin cover
+    #home-cover.section.full-height
+        +navbar('work')
+        .container.white-text
+            .vcenter-wrapper.full-width.no-pad-left
+                .vcenter
+                    br
+                    .row
+                        .col.s12.m10.l6
+                            .font-light.level-1
+                                | Hello! I am Fabian, a freelance Software Engineer focusing on Android,
+                                | based in Tirana, Albania
+                    br
+                    .row
+                        .col.s12.m10.l6
+                            .font-light.level-1
+                                | Currently looking for interesting and challenging work.
+                                | View some of my selected work below
+                    br
+                    .row
+                        .col
+                            .small-section
+                                +browse_work_btn("#" + site.data.index.projects[0].title)
+                        .col
+                            .small-section
+                                a(href="/documents/FabianShallari-Resume.pdf", download).waves-effect.waves-light.btn.btn-medium.rounded.red-resume Download Resume
+                                    i.small.material-icons.left cloud_download

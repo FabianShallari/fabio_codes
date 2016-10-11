@@ -1,0 +1,56 @@
+mixin project_showcase(project, next_id)
+    div(class="section full-height " + project.bg, id=project.title)
+        .showcase-container.white-text.table.vcenter-wrapper
+            .vcenter.center-on-med-and-down
+                .row
+                    .col.s12.l6.vcenter-wrapper
+                        .vcenter.center-on-med-and-down
+                            .level-1
+                                =project.title
+                            .font-medium.level-3
+                                =project.subtitle
+                            .hide-on-small-and-down
+                                br
+                            .hide-on-med-and-down
+                                br
+                            br
+                            .level-3.justify
+                                =project.body
+                            br
+                            .hide-on-med-and-down
+                                .small-section
+                            .section
+                                if project.buttons.playStoreLink
+                                    a(href=project.buttons.playStoreLink, target='_blank').waves-effect.waves-green.btn.btn-medium.rounded.white.green-text.text-lighten-1
+                                        | View on Play Store
+                                        i.small.icon-play.left
+                    .col.s12.l6.vcenter-wrapper
+                        .vcenter
+                            br
+                            .row
+                                .col.s2.vcenter-wrapper.no-pad.hide-if-not-enough-room.showcase-previous
+                                    .vcenter.center-align
+                                        i.large.material-icons chevron_left
+                                .col.s8.vcenter-wrapper.no-pad.full-width-if-enough-room
+                                    .vcenter
+                                        .marvel-device.nexus5.device.vcenter
+                                            .top-bar
+                                            .sleep
+                                            .volume
+                                            .camera
+                                            .screen
+                                                .carousel.carousel-slider
+                                                    each image in project.images
+                                                        a.carousel-item: img(src="/images/screenshots/"
+                                                        + image)
+                                .col.s2.vcenter-wrapper.no-pad.hide-if-not-enough-room.showcase-next
+                                    .vcenter.center-align
+                                        i.large.material-icons chevron_right
+                    .col.s12
+                        .section
+                    .col.s12.center-on-med-and-down
+                        a(href="#"
+                        + next_id, data-scroll).next.waves-effect.waves-light.btn-flat.btn-medium.white-text.rounded Next Project
+                            i.small.material-icons.left keyboard_arrow_down
+
+

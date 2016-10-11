@@ -7118,7 +7118,7 @@ input[type=range]:focus::-ms-fill-upper {
  *
  * iOS Safari (tested on iOS 8.1) does not handle animation-delay very well - it doesn't
  * guarantee that the animation will start _exactly_ after that value. So we avoid using
- * animation-delay and instead set custom keyframes for each color (as redundant as it
+ * animation-delay and instead set fontello keyframes for each color (as redundant as it
  * seems).
  *
  * We write out each animation in full (instead of separating animation-name,

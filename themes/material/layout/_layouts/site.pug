@@ -1,6 +1,9 @@
 extends base.pug
 
 append head
+    include ../_mixins/post_preview.pug
+    include ../_mixins/pagination.pug
+
     link(href="/css/blog.css" rel="stylesheet")
 
 block body
@@ -16,7 +19,7 @@ block body
         .header-container.white-text.center-align
             block header
 
-    .showcase-container
+    .blog-container
         .row.shift-up
             .col.s12
                 block content

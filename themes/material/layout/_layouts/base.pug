@@ -1,5 +1,11 @@
 doctype html
-include components.pug
+include ../_mixins/buttons.pug
+include ../_mixins/contact.pug
+include ../_mixins/navbar.pug
+include ../_mixins/home_cover.pug
+include ../_mixins/project_showcase.pug
+
+
 
 html
     head
@@ -11,10 +17,15 @@ html
 
         //- CSS
         link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet")
         link(href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" rel="stylesheet")
+        link(href="/css/fontello.css" rel="stylesheet")
         link(href="/css/devices.min.css" rel="stylesheet")
         link(href="/css/typography.css" rel="stylesheet")
         link(href="/css/style.css" rel="stylesheet")
+
+        script
+            include ../../source/js/analytics.js
 
         block head
 

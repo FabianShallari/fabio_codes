@@ -1,3 +1,22 @@
+/* General typography */
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 0) {
+  html {
+    font-size: 14px;
+  }
+}
+
 .font-light {
   font-family: "Roboto-Light", sans-serif;
 }
@@ -9,17 +28,21 @@
 }
 
 nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
-  height: 56px !important;
-  line-height: 56px !important;
+  height: 48px !important;
+  line-height: 48px !important;
 }
 
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-  height: 56px !important;
-  line-height: 56px !important;
+  height: 48px !important;
+  line-height: 48px !important;
 }
 
 .font-medium {
   font-family: "Roboto-Medium", sans-serif;
+}
+
+.font-black {
+  font-family: "Roboto-Black", sans-serif;
 }
 
 .level-1, .level-2, .level-3 {
@@ -41,16 +64,6 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 .level-3 {
   font-size: 1.1rem;
   line-height: 1.6;
-}
-
-.level-3.truncate-4 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4; /* number of lines to show */
-  line-height: 1.6;        /* fallback */
-  max-height: 7.04rem;       /* fallback */
 }
 
 /* Marvel prototype fix mobile */

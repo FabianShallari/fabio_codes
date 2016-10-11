@@ -1,6 +1,6 @@
-extends includes/base.pug
+extends _layouts/base.pug
 
-block head
+append head
     link(href="/css/index.css" rel="stylesheet")
 
 block title
@@ -9,13 +9,14 @@ block title
 block body
 
     - var browse_work_link = "#" + site.data.index.projects[0].title
+    - var projects = site.data.index.projects
 
     +fab
     //Intro
     +cover
     // Projects
-    each project in site.data.index.projects
-        +project_showcase(project)
+    each project, i in projects
+        +project_showcase(project, projects[i+1] ? projects[i+1].title : "Contact")
     // Contact
     +contact(browse_work_link)
 

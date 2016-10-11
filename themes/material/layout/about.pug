@@ -1,7 +1,10 @@
-extends includes/site.pug
+extends _layouts/site.pug
 
 append vars
     - var current_page = 'about'
+
+block title
+    title= "Fabian Shallari - About"
 
 block header
     .font-light.level-1
@@ -9,4 +12,7 @@ block header
         | favorite things to read
 
 block content
-    +card-panel(page.content)
+    .card-panel
+        .blog-post.about-me
+            .blog-body
+                != page.content

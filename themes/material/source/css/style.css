@@ -1,3 +1,4 @@
+/* Global styles */
 .uppercase {
   text-transform: uppercase !important;
 }
@@ -7,7 +8,7 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
 }
 
 #home-cover {
-  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/home-cover-mobile.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/index/home-cover-mobile.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,7 +17,7 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
 
 @media (min-width: 768px) {
   #home-cover {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/home-cover.jpg") no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/index/home-cover.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -99,7 +100,7 @@ html, body {
 }
 
 @media all and (max-width: 992px) {
-  .vcenter.center-on-med-and-down {
+  .center-on-med-and-down {
     text-align: center;
   }
 }
@@ -197,13 +198,29 @@ html, body {
   line-height: 1 !important;
 }
 
-.android-icon img{
+.android-icon img {
   height: 250px;
   width: 250px;
   margin-bottom: 30px;
 }
 
 .mail-link {
-  text-decoration: underline;
+  border-bottom: 4px solid white;
+  padding-bottom: 2px;
   color: white;
+}
+
+.social-link {
+  color: white;
+  font-family: "Roboto-Medium", sans-serif;
+}
+
+.btn-medium {
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+@media all and (min-width: 992px) {
+  .social-wrapper {
+    padding-top: 286px;
+  }
 }

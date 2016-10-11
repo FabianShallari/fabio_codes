@@ -1,0 +1,26 @@
+mixin pagination(page)
+
+    - var regex = new RegExp("\\/(" + config.pagination_dir + ".*)?$");
+    - var first = Math.max(page.current - 2, 1);
+    - var left_offset = page.current - first;
+    - var last = Math.min(page.current + 2, page.total);
+    - var right_offset = last - page.current;
+    - last = Math.min(page.current + (4 - left_offset), page.total)
+    - first = Math.max( page.current - (4 - right_offset), 1);
+
+    ul.pagination
+        li(class={disabled: page.prev === 0}).waves-effect
+            a(href= page.prev_link? url_for(page.prev_link): "")
+                i.material-icons chevron_left
+        - for (var number = first; number <= last; number++ )
+            if number == 1
+                - var addToPath = "/"
+            else
+                - var addToPath = "/" + config.pagination_dir + "/" + number;
+            - link = url_for(page.current_url.replace(regex, addToPath));
+            li(class={active: page.current === number}).waves-effect
+                a(href= link)= number
+
+        li(class={disabled: page.next === 0}).waves-effect
+            a(href= page.next_link? url_for(page.next_link): "")
+                i.material-icons chevron_right
