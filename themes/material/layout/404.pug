@@ -1,5 +1,7 @@
 extends _layouts/site.pug
 
+block title
+    title= "Fabian Shallari - XD"
 
 block header
     .font-light.level-1
@@ -7,6 +9,6 @@ block header
 
 block content
     .card-panel
-        .blog-post
-            .blog-body.center-align
-                != page.content
+        .blog-post.center-align
+            .blog-body
+                | You've reached a dead end

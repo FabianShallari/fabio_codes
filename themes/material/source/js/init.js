@@ -1,14 +1,26 @@
 /**
- * Created by fabian on 12/09/16.
+ * Created by fabian on 04/10/16.
  */
-(function($){
-  $(function(){
+$(document).ready(function () {
+  $('.button-collapse').sideNav();
 
-    $('.button-collapse').sideNav();
-    smoothScroll.init();
-    $('[data-close-sidenav]').click(function () {
-      $('.button-collapse').sideNav('hide');
-    });
+  smoothScroll.init();
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+  $('[data-close-sidenav]').click(function () {
+    $('.button-collapse').sideNav('hide');
+  });
+
+  $('.carousel.carousel-slider').carousel({full_width: true});
+
+  $('.showcase-next, .marvel-device').click(function () {
+    $('.carousel.carousel-slider').carousel('next');
+  });
+
+  $('.showcase-previous').click(function () {
+    $('.carousel.carousel-slider').carousel('prev');
+  });
+
+  // setInterval(function () {
+  //   $('.carousel.carousel-slider').carousel('next');
+  // }, 2500);
+});

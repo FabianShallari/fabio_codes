@@ -128,6 +128,14 @@ html, body {
   max-width: 1440px;
 }
 
+.left-align {
+  text-align: left !important;
+}
+
+.right-align {
+  text-align: right !important;
+}
+
 .no-pad {
   padding: 0 !important;
 }
@@ -190,7 +198,7 @@ html, body {
   margin: auto;
 }
 
-.device-arrow i {
+.device-arrow i, .marvel-device {
   cursor: pointer;
 }
 
