@@ -19,8 +19,4 @@ $(document).ready(function () {
   $('.showcase-previous').click(function () {
     $('.carousel.carousel-slider').carousel('prev');
   });
-
-  // setInterval(function () {
-  //   $('.carousel.carousel-slider').carousel('next');
-  // }, 2500);
 });
