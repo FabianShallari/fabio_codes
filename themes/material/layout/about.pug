@@ -1,16 +1,15 @@
 extends _layouts/site.pug
 
+block title
+    - var page_title = "Fabian Shallari - About"
+    title= page_title
+
 append vars
-    - var title = 'Fabian Shallari - About'
     - var header =  "Hello! I am Fabian, these are my interests and some of my favorite things to read"
     - var current_page = 'about'
 
 append head
-    - console.log(site.data.global)
-    +social_meta_tags(title, header, site.data.global.domain + '/images/about/bike_ride.jpg')
-
-block title
-    title= title
+    +social_meta_tags(page_title, header, site.data.global.domain + '/images/about/bike_ride.jpg')
 
 block header
     .font-light.level-1
