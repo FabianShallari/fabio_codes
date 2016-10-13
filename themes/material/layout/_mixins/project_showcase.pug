@@ -30,7 +30,9 @@ mixin project_showcase(project, next_id)
                             .row
                                 .col.s2.vcenter-wrapper.no-pad.hide-if-not-enough-room.showcase-previous
                                     .vcenter.right-align
-                                        i(id="#" + project.title + "-left").large.material-icons chevron_left
+                                        i(id="#"
+                                        + project.title
+                                        + "-left").large.material-icons chevron_left
                                 .col.s8.vcenter-wrapper.no-pad.full-width-if-enough-room
                                     .vcenter
                                         .marvel-device.nexus5.device.vcenter
@@ -45,9 +47,11 @@ mixin project_showcase(project, next_id)
                                                         + image)
                                 .col.s2.vcenter-wrapper.no-pad.hide-if-not-enough-room.showcase-next
                                     .vcenter.left-align
-                                        i(id="#" + project.title + "-right").large.material-icons chevron_right
-                    .col.s12
-                        .section
+                                        i(id="#"
+                                        + project.title
+                                        + "-right").large.material-icons chevron_right
+                br
+                .row.hide-on-med-and-down
                     .col.s12.center-on-med-and-down
                         a(href="#"
                         + next_id, data-scroll).next.waves-effect.waves-light.btn-flat.btn-medium.white-text.rounded Next Project
