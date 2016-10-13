@@ -7,9 +7,9 @@ projects:
     buttons:
       playStoreLink: "https://play.google.com/store/apps/details?id=guru.charlie.android"
     images:
-      - charlie1.png
-      - charlie2.png
-      - charlie3.png
+      - charlie1.jpg
+      - charlie2.jpg
+      - charlie3.jpg
   -
     title: Pomodoro
     subtitle: Android Development
@@ -18,9 +18,9 @@ projects:
     buttons:
       playStoreLink: "https://play.google.com/store/apps/details?id=al.pomodoro.android"
     images:
-      - pomodoro1.png
-      - pomodoro2.png  
-      - pomodoro3.png
+      - pomodoro1.jpg
+      - pomodoro2.jpg
+      - pomodoro3.jpg
   -
     title: Wetick
     subtitle: Android Development
@@ -29,9 +29,9 @@ projects:
     buttons:
       playStoreLink: "https://play.google.com/store/apps/details?id=com.wetick.android"
     images:
-      - wetick1.png
-      - wetick2.png
-      - wetick3.png
+      - wetick1.jpg
+      - wetick2.jpg
+      - wetick3.jpg
   -
     title: Ecovolis
     subtitle: Android Development
@@ -40,6 +40,6 @@ projects:
     buttons:
       playStoreLink: "https://play.google.com/store/apps/details?id=com.ecovolis.android"
     images:
-      - ecovolis1.png
-      - ecovolis2.png
-      - ecovolis3.png
+      - ecovolis1.jpg
+      - ecovolis2.jpg
+      - ecovolis3.jpg

@@ -29,7 +29,7 @@ Nowadays I spend most of my time writing code, something I have been doing for m
 When I'm not writing code, I am reading about writing code. I am an avid reader of software and computer science literature, be it books, blog posts or anything else that can help me better my skills and give me more insight into software architecture and frameworks. Below are some of my favorite books that I have had the pleasure to read recently:
 
 <div class="image-container">
-  {% img /images/about/design_patterns.jpg 250 300 %}{% img /images/about/effective_java.jpg 250 300 %}{% img /images/about/head_first_java.jpg 250 300 %}{% img /images/about/js_good_parts.jpg 250 300 %}{% img /images/about/rails4.jpg 250 300 %}{% img /images/about/well_grounded_rubyist.jpg 250 300 %}
+  {% img /images/about/design_patterns.jpg 240 300 %}{% img /images/about/effective_java.jpg 240 300 %}{% img /images/about/head_first_java.jpg 260 300 %}{% img /images/about/js_good_parts.jpg 200 300 %}{% img /images/about/rails4.jpg 250 300 %}{% img /images/about/well_grounded_rubyist.jpg 240 300 %}
 </div>
 
 On the weekends I play football (soccer) and go biking around the country. I am a fan of good music, mostly indie rock and minimal techno. I also used to play bass guitar on a punk band during my teens but unfortunately I literally don’t know anything about playing music since I got in it for the girls. (The bassist plays the easiest instrument in a band, so he can enjoy on the perks, right?)  
