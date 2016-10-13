@@ -6,6 +6,7 @@ append vars
     - var current_page = 'about'
 
 append head
+    - console.log(site.data.global)
     +social_meta_tags(title, header, site.data.global.domain + '/images/about/bike_ride.jpg')
 
 block title
