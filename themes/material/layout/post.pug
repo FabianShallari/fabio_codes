@@ -1,5 +1,9 @@
 extends _layouts/site.pug
 
+append head
+    +social_meta_tags(page.title, page.excerpt, site.data.global.domain
+    + '/images/index/home-cover-mobile.jpg')
+
 block header
     a(href= theme.menu.Archive).waves-effect.white.black-text.btn.btn-medium.rounded.uppercase
         | Back to blog list

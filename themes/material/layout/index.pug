@@ -2,6 +2,8 @@ extends _layouts/base.pug
 
 append head
     link(href="/css/index.css" rel="stylesheet")
+    +social_meta_tags('Fabian Shallari - Work','Check out my projects', site.data.global.domain
+    + '/images/index/home-cover.jpg')
 
 block title
     title= 'Fabian Shallari'
@@ -16,6 +18,6 @@ block body
     +cover
     // Projects
     each project, i in projects
-        +project_showcase(project, projects[i+1] ? projects[i+1].title : "Contact")
+        +project_showcase(project, projects[i + 1] ? projects[i + 1].title : "Contact")
     // Contact
     +contact(browse_work_link)
