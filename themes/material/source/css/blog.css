@@ -54,7 +54,7 @@
     font-size: 1.2rem;
   }
 
-  .blog-post .blog-body {
+  .blog-post .blog-body.truncate-4 {
     font-size: 1.2rem;
   }
 
@@ -79,7 +79,7 @@
     font-size: 1.1rem;
   }
 
-  .blog-post .blog-body {
+  .blog-post .blog-body.truncate-4 {
     font-size: 1.1rem;
   }
 
@@ -104,7 +104,7 @@
     font-size: 1rem;
   }
 
-  .blog-post .blog-body {
+  .blog-post .blog-body.truncate-4 {
     font-size: 1rem;
   }
 
