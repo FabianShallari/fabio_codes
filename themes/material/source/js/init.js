@@ -4,7 +4,7 @@
 $(document).ready(function () {
   $('.button-collapse').sideNav();
 
-  smoothScroll.init();
+  $('[data-scroll]').smoothScroll();
 
   $('[data-close-sidenav]').click(function () {
     $('.button-collapse').sideNav('hide');
