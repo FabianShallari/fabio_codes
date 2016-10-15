@@ -227,6 +227,10 @@ html, body {
   font-family: "Roboto-Bold", sans-serif;
 }
 
+.btn, .btn-large, .btn-flat {
+  padding: 0 1.5rem 0 1.3rem;
+}
+
 @media all and (min-width: 992px) {
   .social-wrapper {
     padding-top: 286px;
