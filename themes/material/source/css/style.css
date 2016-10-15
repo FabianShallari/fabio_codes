@@ -216,6 +216,12 @@ html, body {
   border-bottom: 4px solid white;
   padding-bottom: 2px;
   color: white;
+  font-family: "Roboto-Medium", sans-serif;
+}
+
+.contact-prompt span {
+  display: block;
+  line-height: 1.4;
 }
 
 .social-link {
@@ -223,11 +229,21 @@ html, body {
   font-family: "Roboto-Medium", sans-serif;
 }
 
+@media all and (min-width: 993px){
+  .contact-wrapper .left-col {
+    padding-right: 2.5rem;
+  }
+
+  .contact-wrapper .right-col {
+    padding-left: 2.5rem;
+  }
+}
+
 .btn-medium {
   font-family: "Roboto-Bold", sans-serif;
 }
 
-.btn, .btn-large, .btn-flat {
+.btn-medium {
   padding: 0 1.5rem 0 1.3rem;
 }
 
