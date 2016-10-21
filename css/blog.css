@@ -1,0 +1,292 @@
+/* Blog posts specific styles */
+
+/* Typography for blog posts */
+.blog-post .blog-title {
+  font-family: "Roboto-Black", sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.2;
+  color: #303030;
+}
+
+.blog-post .blog-date {
+  color: #BABABA;
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+
+.blog-post .blog-body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #5A5A5A;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Make links red on blog body */
+.blog-body a {
+  color: rgb(235, 84, 84);
+}
+
+/* Center code on About Me page*/
+.about-me .code {
+  text-align: center !important;
+}
+
+/* Truncate to 4 lines the post excerpt for preview purposes */
+.blog-body.truncate-4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  line-height: 1.6; /* fallback */
+  max-height: 8rem; /* fallback */
+}
+
+@media (max-width: 1439px) {
+
+  .blog-post .blog-title {
+    font-size: 2.1rem;
+  }
+
+  .blog-post .blog-date {
+    font-size: 1.2rem;
+  }
+
+  .blog-post .blog-body.truncate-4 {
+    font-size: 1.2rem;
+  }
+
+  .blog-body.truncate-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-height: 1.6; /* fallback */
+    max-height: 7.68rem; /* fallback */
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .blog-post .blog-title {
+    font-size: 2rem;
+  }
+
+  .blog-post .blog-date {
+    font-size: 1.1rem;
+  }
+
+  .blog-post .blog-body.truncate-4 {
+    font-size: 1.1rem;
+  }
+
+  .blog-body.truncate-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-height: 1.6; /* fallback */
+    max-height: 7.04rem; /* fallback */
+  }
+}
+
+@media (max-width: 767px) {
+
+  .blog-post .blog-title {
+    font-size: 1.8rem;
+  }
+
+  .blog-post .blog-date {
+    font-size: 1rem;
+  }
+
+  .blog-post .blog-body.truncate-4 {
+    font-size: 1rem;
+  }
+
+  .blog-body.truncate-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-height: 1.6; /* fallback */
+    max-height: 6.4rem; /* fallback */
+  }
+}
+
+.image-container {
+  width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-container img {
+  display: inline;
+}
+
+/* Make links somewhat bold */
+.card-action a {
+  font-family: "Roboto-Bold", "sans-serif";
+  font-size: 1.25rem;
+}
+
+/*  */
+.card {
+  cursor: pointer !important;
+}
+
+/* Block level link for  */
+a .link-wrapper {
+  display: block;
+}
+
+.blog-container {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1024px;
+}
+
+@media all and (max-width: 600px) {
+  .blog-container {
+    width: 98%;
+  }
+}
+
+/* padding for blog post, less padding on the bottom of preview to account for the links padding*/
+.card .card-content, .card-panel {
+  padding: 36px 36px 36px 36px;
+}
+
+.card.blog-preview .card-content {
+  padding: 36px 36px 16px 36px !important;
+}
+
+@media all and (max-width: 600px) {
+  .card.blog-preview .card-content {
+    padding: 20px 20px 10px 20px !important;;
+  }
+
+  .card .card-content, .card-panel {
+    padding: 20px 20px 20px 20px !important;;
+  }
+}
+
+/* Fix card height, positioning and border */
+.card {
+  height: auto !important;
+}
+
+.card-action, .card-content {
+  position: relative !important;
+}
+
+.card .card-action {
+  border-top: none !important;
+}
+
+/* Header message container */
+.header-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 70%;
+}
+
+/* Responsive tables for blog posts*/
+@media only screen and (max-width: 992px) {
+  .blog-post table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    position: relative;
+    /* sort out borders */
+  }
+
+  .blog-post table td:empty:before {
+    content: '\00a0';
+  }
+
+  .blog-post table th,
+  .blog-post table td {
+    margin: 0;
+    vertical-align: top;
+  }
+
+  .blog-post table th {
+    text-align: left;
+  }
+
+  .blog-post table thead {
+    display: block;
+    float: left;
+  }
+
+  .blog-post table thead tr {
+    display: block;
+    padding: 0 10px 0 0;
+  }
+
+  .blog-post table thead tr th::before {
+    content: "\00a0";
+  }
+
+  .blog-post table tbody {
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .blog-post table tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .blog-post table th {
+    display: block;
+    text-align: right;
+  }
+
+  .blog-post table td {
+    display: block;
+    min-height: 1.25em;
+    text-align: left;
+  }
+
+  .blog-post table tr {
+    padding: 0 10px;
+  }
+
+  .blog-post table thead {
+    border: 0;
+    border-right: 1px solid #d0d0d0;
+  }
+
+  .blog-post table.bordered th {
+    border-bottom: 0;
+    border-left: 0;
+  }
+
+  .blog-post table.bordered td {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  .blog-post table.bordered tr {
+    border: 0;
+  }
+
+  .blog-post table.bordered tbody tr {
+    border-right: 1px solid #d0d0d0;
+  }
+}

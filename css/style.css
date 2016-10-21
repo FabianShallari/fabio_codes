@@ -1,0 +1,254 @@
+/* Global styles */
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+  font-size: 1.5rem !important;
+}
+
+#home-cover {
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/index/home-cover-mobile.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  #home-cover {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/index/home-cover.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+html, body {
+  height: 200px;
+  box-sizing: border-box;
+  min-width: 320px !important;
+}
+
+.small-section {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.red-resume {
+  background-color: #E75353;
+}
+
+.red-resume:hover {
+  background-color: rgb(255, 89, 89);
+}
+
+.rounded {
+  border-radius: 99999px !important;
+}
+
+.btn-medium {
+  height: 42px;
+  line-height: 42px;
+}
+
+.btn.bar, .btn-large.bar {
+  margin: 1rem;
+}
+
+.container .vcenter-wrapper {
+  padding: 20px;
+}
+
+.vcenter-wrapper {
+  height: 90vh;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  display: table;
+}
+
+.shift-up {
+  margin-top: -5%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+@media all and (orientation: portrait) {
+  .vcenter-wrapper {
+    height: auto !important;
+  }
+
+  .full-height {
+    min-height: auto !important;
+  }
+}
+
+@media all and (orientation: landscape) {
+  .next {
+    margin-top: -7rem;
+  }
+}
+
+.vcenter {
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media all and (max-width: 992px) {
+  .center-on-med-and-down {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .level-3.justify {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 1407px) {
+  .hide-if-not-enough-room {
+    display: none;
+  }
+
+  .full-width-if-enough-room {
+    width: 100% !important;
+  }
+}
+
+.showcase-container {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1440px;
+}
+
+.left-align {
+  text-align: left !important;
+}
+
+.right-align {
+  text-align: right !important;
+}
+
+.no-pad {
+  padding: 0 !important;
+}
+
+.no-pad-left {
+  padding-left: 0 !important;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.center-align {
+  text-align: center !important;
+}
+
+#hamburger-menu {
+  font-size: 2rem !important;
+}
+
+.carousel.carousel-slider {
+  height: 100% !important;
+}
+
+.indicators {
+  margin-top: 62px !important;
+}
+
+.pomodoro-red-bg {
+  background-image: linear-gradient(135deg, #fa4f57 0%, #9e1213 100%);
+}
+
+.ecovolis-bg {
+  background-image: linear-gradient(135deg, #5fccd3 0%, #3e98a1 100%);
+}
+
+.wetick-bg {
+  background-image: linear-gradient(135deg, #2f8788 0%, #143637 100%);
+}
+
+.charlie-bg {
+  background-image: linear-gradient(135deg, #7ac043 0%, #42a72d 100%);
+}
+
+.contact-bg, #header-cover {
+  background-image: linear-gradient(135deg, #3095a7 0%, #4ca77c 50%, #7ac046 100%);
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.marvel-device .screen img {
+  width: 100%;
+  height: 100%;
+}
+
+.marvel-device {
+  display: block;
+  margin: auto;
+}
+
+.device-arrow i, .marvel-device {
+  cursor: pointer;
+}
+
+.contact-wrapper br {
+  line-height: 1 !important;
+}
+
+.android-icon img {
+  height: 250px;
+  width: 250px;
+  margin-bottom: 30px;
+}
+
+.mail-link {
+  border-bottom: 4px solid white;
+  padding-bottom: 2px;
+  color: white;
+  font-family: "Roboto-Medium", sans-serif;
+}
+
+.contact-prompt span {
+  display: block;
+  line-height: 1.4;
+}
+
+.social-link {
+  color: white;
+  font-family: "Roboto-Medium", sans-serif;
+}
+
+@media all and (min-width: 993px){
+  .contact-wrapper .left-col {
+    padding-right: 2.5rem;
+  }
+
+  .contact-wrapper .right-col {
+    padding-left: 2.5rem;
+  }
+}
+
+.btn-medium {
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+.btn-medium {
+  padding: 0 1.5rem 0 1.3rem;
+}
+
+@media all and (min-width: 992px) {
+  .social-wrapper {
+    padding-top: 286px;
+  }
+}

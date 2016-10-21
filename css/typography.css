@@ -1,0 +1,160 @@
+/* General typography */
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 0) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.font-light {
+  font-family: "Roboto-Light", sans-serif;
+}
+
+.body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+  height: 48px !important;
+  line-height: 48px !important;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  height: 48px !important;
+  line-height: 48px !important;
+}
+
+.font-medium {
+  font-family: "Roboto-Medium", sans-serif;
+}
+
+.font-black {
+  font-family: "Roboto-Black", sans-serif;
+}
+
+.level-1, .level-2, .level-3 {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  text-shadow: 0 0 0;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+.level-1 {
+  font-size: 1.6rem;
+}
+
+.level-2 {
+  font-size: 1.3rem;
+}
+
+.level-3 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Marvel prototype fix mobile */
+.marvel-device.nexus5 {
+  width: 240px;
+  height: 429px;
+}
+
+@media (min-width: 375px) {
+  .marvel-device.nexus5 {
+    width: 245px;
+    height: 435px;
+  }
+}
+
+@media (min-width: 425px) {
+  .marvel-device.nexus5 {
+    width: 320px;
+    height: 568px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .level-1 {
+    font-size: 2rem;
+  }
+
+  .level-2 {
+    font-size: 1.5rem;
+  }
+
+  .level-3 {
+    font-size: 1rem;
+  }
+
+  .level-3.truncate-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-height: 1.6;        /* fallback */
+    max-height: 6.4rem;       /* fallback */
+  }
+}
+
+@media (min-width: 1024px) {
+  .level-1 {
+    font-size: 2.2rem;
+  }
+
+  .level-2 {
+    font-size: 1.8rem;
+  }
+
+  .level-3 {
+    font-size: 1.2rem;
+  }
+
+  .level-3.truncate-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-height: 1.6;        /* fallback */
+    max-height: 7.68rem;       /* fallback */
+  }
+}
+
+@media (min-width: 1440px) {
+  .level-1 {
+    font-size: 2.6rem;
+  }
+
+  .level-2 {
+    font-size: 2rem;
+  }
+
+  .level-3 {
+    font-size: 1.3rem;
+  }
+
+  .level-3.truncate-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-height: 1.6;        /* fallback */
+    max-height: 8.32rem;       /* fallback */
+  }
+}
